@@ -29,8 +29,7 @@ jobs:
     
     - name: Configure buildozer spec
       run: |
-        # 创建正确格式的buildozer.spec文件
-        cat > buildozer.spec << EOF
+        cat > buildozer.spec << 'EOF'
 [app]
 title = 球衣款式匹配系统
 package.name = jersey_matcher
