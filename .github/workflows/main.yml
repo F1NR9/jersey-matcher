@@ -29,6 +29,8 @@ jobs:
     
     - name: Configure buildozer spec
       run: |
+        # 清空现有的buildozer.spec文件
+        > buildozer.spec
         echo "title = 球衣款式匹配系统" >> buildozer.spec
         echo "package.name = jersey_matcher" >> buildozer.spec
         echo "package.domain = org.kivy" >> buildozer.spec
